@@ -1,0 +1,51 @@
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-image: url("background.webp");
+  width: 100%;
+}
+
+.intro-image {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image img {
+  width: 1400px;
+  height: auto;
+  padding-bottom: 5%;
+  margin-left: 0;
+}
+
+.container-product {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  height: auto;
+  width: 1400px;
+}
+
+.product .shopitem {
+  display: flex;
+  margin-top: 20px;
+}
+
+.allproduct {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.allproduct button {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 30px;
+  border: none;
+  color: #ffff;
+  background-color: rgb(247, 153, 13);
+}

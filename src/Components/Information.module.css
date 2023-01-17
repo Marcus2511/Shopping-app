@@ -1,0 +1,81 @@
+.result-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 2rem;
+}
+
+.result-image {
+  display: flex;
+  justify-content: center;
+}
+
+.result-image img{
+    width: 32rem;
+    height: auto;
+}
+
+.result-description {
+  text-align: justify;
+}
+
+.result-size {
+  padding: 1rem 0;
+}
+
+.result-box {
+  display: flex;
+}
+
+.size {
+  width: 4rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  background-color: #ffff;
+  border: gray solid 1px;
+}
+
+.size:hover {
+  border: red solid 1px;
+}
+
+.result-UX {
+  display: flex;
+}
+
+.result-UX button,
+.result-UX div {
+  width: 16rem;
+  padding: 10px 0;
+  border: red solid 1px;
+  border-radius: 20px;
+  background-color: #ffff;
+  margin-right: 20px;
+  text-align: center;
+  font-size: large;
+}
+
+.result-UX button:hover {
+  background-color: red;
+  color: #ffff;
+}
+
+.result-benefit{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.result-wrap{
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.result-wrap img{
+    margin-left: 0;
+}
+
+.result-privi{
+    margin: 1rem;
+    text-align: center;
+}
