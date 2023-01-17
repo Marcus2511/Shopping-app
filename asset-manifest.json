@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Shopping-app/static/css/main.f8d6ef22.css",
+    "main.js": "/Shopping-app/static/js/main.18838820.js",
+    "static/media/shopbar.jpg": "/Shopping-app/static/media/shopbar.3bda91110513c4570964.jpg",
+    "static/media/Intro.jpg": "/Shopping-app/static/media/Intro.cf8a75296f481955f38e.jpg",
+    "static/media/background.webp": "/Shopping-app/static/media/background.02b2b2c5aa220fb2e9e0.webp",
+    "static/media/5.svg": "/Shopping-app/static/media/5.377376ed7131dabb6290cbe8c23f537e.svg",
+    "static/media/logo.webp": "/Shopping-app/static/media/logo.dc2952905d00f82f2972.webp",
+    "static/media/1.svg": "/Shopping-app/static/media/1.86cb137e312e057ab8451c9fec295845.svg",
+    "static/media/return1.svg": "/Shopping-app/static/media/return1.610d229e4084ec2bc4c98567e3d66c54.svg",
+    "static/media/2.svg": "/Shopping-app/static/media/2.336d71269a4cf12d55f66ec97cb3d1d9.svg",
+    "static/media/warranty.svg": "/Shopping-app/static/media/warranty.b55e1a08f679e1982560be41f750d37a.svg",
+    "static/media/6.svg": "/Shopping-app/static/media/6.e67f12e9571da740fb7c017ae79a7afa.svg",
+    "static/media/cashback.svg": "/Shopping-app/static/media/cashback.41b3671362c1ca1f923da1de9a946fca.svg",
+    "static/media/3.svg": "/Shopping-app/static/media/3.d8d50cd5a7004ee4873e6d4d0367d2d5.svg",
+    "static/media/auth.svg": "/Shopping-app/static/media/auth.02895bfd358b2c7da3583e278d7d5455.svg",
+    "static/media/4.svg": "/Shopping-app/static/media/4.81f3be6e9abed00cc9784b6cb53db24b.svg",
+    "static/media/slick.svg": "/Shopping-app/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Shopping-app/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Shopping-app/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Shopping-app/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Shopping-app/index.html",
+    "main.f8d6ef22.css.map": "/Shopping-app/static/css/main.f8d6ef22.css.map",
+    "main.18838820.js.map": "/Shopping-app/static/js/main.18838820.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8d6ef22.css",
+    "static/js/main.18838820.js"
+  ]
+}
