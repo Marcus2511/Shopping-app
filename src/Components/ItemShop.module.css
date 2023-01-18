@@ -11,14 +11,14 @@
 .intro-image {
   display: flex;
   justify-content: center;
+  margin: 1rem 2rem;
 }
 
-.intro-image img {
-  width: 1400px;
-  height: auto;
-  padding-bottom: 5%;
-  margin-left: 0;
+.intro-image h3, .intro-image p{
+  display: none;
+
 }
+
 
 .container-product {
   display: flex;

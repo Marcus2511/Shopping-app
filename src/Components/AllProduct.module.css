@@ -37,7 +37,7 @@
 
 .allproduct-card {
   width: 500px;
-  height: 540px;
+  height: 600px;
   background: #fff;
   border-radius: 40px;
   margin: 20px;
@@ -83,4 +83,13 @@
   border-radius: 20px;
   width: 7rem;
   height: 4rem;
+  cursor: pointer;
+}
+
+.addcart button:hover {background-color: #ec1b1b}
+
+.addcart button:active {
+  background-color: #ec1b1b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

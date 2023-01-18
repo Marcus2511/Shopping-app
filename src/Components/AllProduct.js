@@ -9,37 +9,52 @@ const AllProduct = () => {
   const [url, setUrl] = useState("https://fakestoreapi.com/products/");
   const [search, setSearch] = useState("");
   const [allitem, setAllitem] = useState();
-  let navigate = useNavigate();
   const [cart, setCart] = useState([]);
+  let navigate = useNavigate();
 
   const addtocart = (item) => {
-    cart.push(item)
-    console.log(cart)
+    const exist = cart.find((x) => x.id === item.id);
+    if (exist) {
+      setCart(
+        cart.map((x) =>
+          x.id === item.id ? { ...exist, quty: exist.quty + 1 } : x
+        )
+      );
+    } else {
+      setCart([...cart, { ...item, quty: 1 }]);
+    }
   };
 
-  // const handlechange = (item, n)=>{
-  //   const index=cart.indexOf(item);
-  //   const arr=cart;
-  //   arr[index].amount +=n;
+  const removetocart = (item) => {
+    const exist = cart.find((x) => x.id === item.id);
+    if (exist) {
+      if (exist.quty === 1) {
+        setCart(cart.filter((x) => x.id !== item.id));
+      } else {
+        setCart(
+          cart.map((x) =>
+            x.id === item.id ? { ...exist, quty: exist.quty - 1 } : x
+          )
+        );
+      }
+    }
+  };
 
-  //   if(arr[index].amount ===0) arr[index].amount=1;
-  //   setCart([...arr]);
-  // }
-
-  const getproduct = async () => {
-    const response = await fetch(url);
-    const data = await response.json();
-    setAllitem(data);
+  const getproduct = () => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => (search ? setAllitem(getitem) : setAllitem(data)));
   };
 
   useEffect(() => {
     getproduct();
-  }, []);
+  }, [search]);
 
-  const indexSearch = (KB) => {
-    if (KB.key === "Enter")
-      setUrl(`https://fakestoreapi.com/products/${search}`);
-  };
+  const getitem =
+    allitem &&
+    allitem.filter((item) =>
+      item.title.toLowerCase().includes(search.toLowerCase())
+    );
 
   return (
     <>
@@ -57,10 +72,9 @@ const AllProduct = () => {
         <input
           type="search"
           placeholder="Enter product name"
-          //   onChange={(e) => setsearch(e.target.value)}
-          //   onKeyPress={indexSearch}
+          onChange={(e) => setSearch(e.target.value)}
         ></input>
-        <Cart cart={cart}/>
+        <Cart cart={cart} addtocart={addtocart} removetocart={removetocart} />
       </div>
       <div className={classes["allproduct-container"]}>
         {allitem &&
