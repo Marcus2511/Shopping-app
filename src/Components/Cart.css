@@ -1,13 +1,13 @@
-.modal-header h5 {
+.cart-header h5 {
   font-size: 3.25rem;
 }
 
-.modal-header {
+.cart-header {
   background-size: contain;
   color: #0a58df;
 }
 
-.modal-body {
+.cart-body {
   background-image: url("shopcart.jpg");
   background-size: cover;
 }

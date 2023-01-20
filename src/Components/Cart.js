@@ -24,8 +24,8 @@ function Cart(props) {
         Print
       </Button>
       <Modal isOpen={modal} toggle={toggle} fullscreen>
-        <ModalHeader toggle={toggle}>Your Cart</ModalHeader>
-        <ModalBody>
+        <ModalHeader toggle={toggle} className="cart-header">Your Cart</ModalHeader>
+        <ModalBody className="cart-body">
           <div>{cart.length === 0 && <div>Cart is empty</div>}</div>
           <div className="bill">
             {cart.map((item) => (
