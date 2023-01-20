@@ -10,37 +10,14 @@ import { UncontrolledCarousel } from "reactstrap";
 const ItemShop = () => {
   const [item, setItem] = useState();
   const [show, setShow] = useState(false);
-  const url1 = "https://fakestoreapi.com/products/category/men's%20clothing";
-  const url2 = "https://fakestoreapi.com/products/category/women's%20clothing";
-  const url3 = "https://fakestoreapi.com/products/category/jewelery";
-  const url4 = "https://fakestoreapi.com/products/category/electronics";
+  const url1 = "https://fakestoreapi.com/products/";
   let navigate = useNavigate();
-  const [cart, setCart] = useState([]);
-
-  const handleclick = (item) => {
-    cart.push(item);
-  };
 
   const getdata = async () => {
     const response1 = await fetch(url1);
     const data1 = await response1.json();
-    const men = [data1];
 
-    const response2 = await fetch(url2);
-    const data2 = await response2.json();
-    const woman = [data2];
-
-    const response3 = await fetch(url3);
-    const data3 = await response3.json();
-    const jewelery = [data3];
-
-    const response4 = await fetch(url4);
-    const data4 = await response4.json();
-    const electronics = [data4];
-
-    const clothes = men.concat(woman).concat(jewelery).concat(electronics);
-
-    setItem(clothes);
+    setItem(data1);
     setShow(true);
   };
 

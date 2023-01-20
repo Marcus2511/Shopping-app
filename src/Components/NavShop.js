@@ -24,13 +24,8 @@ const NavShop = () => {
           </NavLink>
         </NavItem>
         <NavItem className={classes.Item}>
-          <NavLink active href="#men">
-            Men's clothing
-          </NavLink>
-        </NavItem>
-        <NavItem className={classes.Item}>
-          <NavLink active href="#women">
-            Women's clothing
+          <NavLink active href="#clothes">
+            Clothing
           </NavLink>
         </NavItem>
         <NavItem className={classes.Item}>
